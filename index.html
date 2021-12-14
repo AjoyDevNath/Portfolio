@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajoy Nath</title>
+    
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--navbar fixed-->
+    <link rel="stylesheet" href="css/navbar-fixed.css">
+    <!--navbar fixed end-->
+    <link rel="stylesheet" href="css/icofont.min.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/man.png" type="image/x-icon">
+
+    <style>
+        .social ul li a{
+            position: relative;
+            width :45px;
+            height : 45px;
+            
+            text-align: center;
+            margin : 0 20px;
+            border-radius: 50%;
+            padding : 6px;
+            box-sizing: border-box;
+            text-decoration: none;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+            transition: 0.5s;
+            border: 1px solid gainsboro;
+            background: linear-gradient(0deg,#ddd,#fff);
+        }
+        .social ul li a:hover{
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        .social ul li a .fa{
+            width : 100%;
+            height : 100%;
+            display : block;
+            background: linear-gradient(0deg,#fff,#ddd);
+            border-radius: 50%;
+            line-height : calc(38px - 6px);
+            font-size: 20px;
+            color: #262626;
+            transition: .5s;
+        }
+        .social ul li:nth-child(1) a:hover .fa{
+            color : #3B5998;
+        }
+        .social ul li:nth-child(2) a:hover .fa{
+            color : #00acee ;
+        }
+        .social ul li:nth-child(4) a:hover .fa{
+            color : #0e76a8 ;
+        }
+        .button{
+            background-color: #0e76a8;
+            margin-top: 15px;
+            color : white;
+            padding : 15px 32px;
+            text-align : center;
+            display : inline-block;
+            font-size : 16px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover{
+            text-decoration: none;
+            color:#0e76a8;
+            background: #fff;
+            border : 1px solid gray;
+            transition: 0.7s;
+            box-shadow: 2px 5px 10px gainsboro;
+        }
+
+        
+        #skills{
+            h2{
+                margin-left: 420px;
+                font-size: 1cm;
+                font-weight: bold;
+            }
+        }
+        .progress-name{
+            margin-bottom: 5px;
+            margin-left: 2px;
+        }
+
+        #resume .resume-item h4 {
+            line-height: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            
+            font-family: "Poppins", sans-serif;
+            color: #0563bb;
+            margin-bottom: 10px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Raleway", sans-serif;
+    }
+
+    #resume .resume-item ::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    left: 16px;
+    top: 55px;
+    background: #fff;
+    border: 2px solid #0563bb;
+}
+.ajoy{
+    
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 15px;
+}
+
+
+.back-to-top i{
+    padding: 12px;
+    color : #ffffffee;
+    position: relative;
+    
+}
+.fa{
+    font-weight: 900px;
+}
+
+
+.arrow-sign{
+    background-color: #0563bb;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+#services .icon {
+    margin: 0 auto 30px auto;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #0563bb;
+    transition: all 0.3s ease-in-out;
+    margin-top: 30px;
+}
+
+.copyright{
+    background-color: #0563bb;
+}
+
+    </style>
+    
+</head>
+<body>
+
+    <!--Navigation/header section start-->
+    <nav class="navbar navbar-dark  navbar-expand-md id="home"  uk-sticky="top: 200; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+        <div class="container">
+            <a href="#" class="navbar-brand" id="logo">AJOY</a>
+            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">My Skills</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navigation/header section end-->
+
+    
+
+    <!--home page start-->
+        <section class="banner" id="home">
+            <div class="banner-font dark-overlay">
+                <h2>Hello! I'm <span>AJOY</span></h2>
+
+                <h3>I'm a Frontend Web Developer</h3>
+                <a href="#about" class="btn btn-info">About </a>
+            </div>
+        </section>
+        <!--<img src="img/photo-1.jpg" alt="">-->
+        <!--home page start-->
+
+
+        <!--About section start-->
+        <section class="about-section" id="about">
+            <div class="container" >
+                <div class="about-card" style="border-radius: 5px">
+                    <h2 class="py-5">ABOUT ME</h2>
+                    
+                   <div class="container">
+                    <div class="row ">
+                        <div class="col-md-5">
+                            <img src="img/photo.jpg" height="200px" width="300px" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row-md-6 text-center">
+                                <p class="border-after ajoy" style="font-size: 25px">Ajoy Nath</p>
+                                <p>I am a Student and Web Designer in Bangladesh.I am doing my Bsc in Computer Science.I grew up in Chittagong,Bangladesh.I am a ambivert person but friendly.I always dream to be a happy and good man.I am very much curious about tech world so I try to explore tech world as much as I can.</p>
+                            </div>
+
+                            <div class="title-box-2">
+                                <h4 class="title-left">
+                                  Get in Touch
+                                  <hr>
+                                </h4>
+                            </div>
+
+                            
+                              <div class="social py-4" style="margin-left: -50px;">
+                                    <ul class="d-flex" style="list-style-type: none">
+                                        <li ><a class="nav-link link" href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li ><a class="nav-link link" href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li ><a class="nav-link link" href="" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                                        <li ><a class="nav-link link" href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+  
+                                    </ul>
+                              </div>
+                              <div>
+                                    <a href="" class="button">DOWNLOAD MY CV</a>
+                              </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--My Skills-->
+        <section class="skill-section" id="skills">
+            <div class="container">
+                 <div class="skill-card">
+                     <h2 style="margin-top: 80px; font-weight: bold;margin-left: 420px;font-size: 1cm;">MY SKILLS</h2>
+                     <div class="container">
+                        <div class="row d-flex justify-content-between">
+                            <p class="my-5" style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eaque incidunt. Temporibus earum repudiandae laborum harum minima sed adipisci explicabo. Aspernatur provident culpa eius eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint qui dolorum necessitatibus beatae facilis perspiciatis, est iste amet deserunt porro quidem nobis ex tempore!</p>
+                            <div class="col-md-5">
+                                <div class="progress-name">
+                                    
+                                    <strong>HTML</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped" style="width: 75%;">75%</div>
+                                </div>
+                                <br><br>
+                                <div class="progress-name">
+                                    
+                                    <strong>CSS</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" style="width: 25%;">25%</div>
+                                </div>
+                                <br><br>
+                                <div class="progress-name">
+                                    
+                                    <strong>BOOTSTRAP</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" style="width: 85%;">85%</div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-5">
+                                <div class="progress-name">
+                        
+                                    <strong>JAVASCRIPT</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 33%;">33%</div>
+                                </div>
+                                <br><br>
+                                <div class="progress-name">
+                                    <strong>PHP</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning text-dark" style="width: 56%;">56%</div>
+                                </div>
+                                <br><br>
+                                <div class="progress-name">
+                                    <strong>NODE.JS</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-info" style="width: 65%;">65%</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <hr size="1" width="80%" style="margin-left: 10%; margin-top:-30px">
+        </div>  
+
+        <!--Resume-->
+        <section id="resume" class="resume-section" style="margin-top:-50px">
+            <div class="container">
+                <div class="resume-card">
+                    <h2 style="margin-top: 80px; margin-bottom: 30px; font-weight: bold; margin-left: 420px; font-size: 1cm; margin-top:-70px;" class="py-5">RESUME</h2>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <h3 style="font-size: 26px; font-weight: bold;">Summary</h3>
+                                <div class="resume-item pb-0 mt-4" style="margin-left: 40px;">
+                                    <h4>Ajoy Nath</h4>
+
+                                    <div style="border-left: 2px solid #0563bb; padding-left: 30px; margin-left: -32px; margin-top: -13px; padding-top: 20px;">
+                                        <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt neque quam consequuntur temporibus molestiae enim.</em></p>
+                                        <ul style="margin-left: -20px;">
+                                            <li style="margin-bottom: 10px;">Chittagong,Bangladesh</li>
+                                            <li style="margin-bottom: 10px;">(+880)1533-306198</li>
+                                            <li>m.ajoy.i@eee.org</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h3 style="font-size: 26px; font-weight: bold; padding-top:5px;padding-bottom: 5px;">Education</h3>
+
+                                <div class="resume-item pb-0 mt-4" style="margin-left: 40px;">
+
+                                    <div style="border-left :2px solid #0563bb; padding-left: 30px; margin-left: -32px; margin-top: -13px; padding-top: 20px;">
+                                    
+                                        
+
+                                    <h4 style="margin-bottom: 0px;">BSc. in Computer Science & Engineering</h4>
+                                    <div style="border-left :2px solid #0563bb; padding-left: 30px; margin-left: -32px; margin-top: -13px; padding-top: 20px;">
+                                        <div style="border: 1px solid whitesmoke; padding: 2px 8px ;height: 35px; width: 120px; background-color: whitesmoke;border-radius: 3px;" class="my-3">
+                                            <p style="text-align: center;">2019- Present</p>
+                                        </div>
+                                        <p><em>International Islamic University Chittagong</em></p>
+                                        
+                                    </div>
+                                    <br>
+                                    <h4 style="margin-bottom: 0px;">Higher secondary Certificate</h4>
+                                    <div style="border-left :2px solid #0563bb; padding-left: 30px; margin-left: -32px; margin-top: -13px; padding-top: 20px;">
+                                        <div style="border: 1px solid whitesmoke; padding: 2px 8px ;height: 35px; width: 120px; background-color: whitesmoke;border-radius: 3px;" class="my-3">
+                                            <p style="text-align: center;">2015- 2017</p>
+                                        </div>
+                                        <p><em>Chittagong Govt. Model College</em></p>
+                
+                                    </div>
+                                    <br>
+                                    <h4 style="margin-bottom: 0px;">Secondary School Certifiate</h4>
+                                    <div style="border-left :2px solid #0563bb; padding-left: 30px; margin-left: -32px; margin-top: -13px; padding-top: 20px;">
+                                        <div style="border: 1px solid whitesmoke; padding: 2px 8px ;height: 35px; width: 120px; background-color: whitesmoke;border-radius: 3px;" class="my-3">
+                                            <p style="text-align: center;">2015</p>
+                                        </div>
+                                        <p><em>Nanupur Abu Sobhan High School</em></p>
+                                        
+                                    </div>                                        
+
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-6">
+                                <h3 style="font-size: 26px; font-weight: bold;">Professional Experience</h3>
+                                <div class="resume-item pb-0 mt-4" style="margin-left: 40px;">
+                                    <h4 class="py-0 my-0">Junior Web Developer</h4>
+                                    <div style="border-left: 2px solid #0563bb; padding-left: 30px; margin-left: -32px; margin-top: -7px; padding-top: 10px;">
+                                        <div style="border: 1px solid whitesmoke; padding: 2px 8px ;height: 35px; width: 130px; background-color: whitesmoke;border-radius: 3px" class="my-3" >
+                                            <p style="text-align: center;">2020- Present</p>
+                                            <p><em>Dhaka,Bangladesh</em></p>
+                                        </div>
+                                        <ul style="margin-left: -20px; margin-top :50px;">
+                                            <li style="margin-bottom: 10px;"><p>Lorem ipsum dolor</p></li>
+                                            <li style="margin-bottom: 10px;"><p>Lore</p></li>
+                                            <li><p>aspernatur dolores delectus, minus fugiat!</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="resume-item pb-0 mt-4" style="margin-left: 40px;">
+                                    <h4 class="py-0 my-0">Member and Volunteer of IEEE student branach</h4>
+                                    <div style="border-left: 2px solid #0563bb; padding-left: 30px; margin-left: -32px; margin-top: -7px; padding-top: 10px;">
+                                        <div style="border: 1px solid whitesmoke; padding: 2px 8px ;height: 35px; width: 130px; background-color: whitesmoke;border-radius: 3px" class="my-3" >
+                                            <p style="text-align: center;">2020- Present</p>
+                                            
+                                        </div>
+                                        <p><em>International Islamic University Chittagong</em></p>
+                                        
+                                        <ul style="margin-left: -20px; margin-top :50px;">
+                                            <li style="margin-bottom: 10px;"><p>Frontend Web Developer</p></li>
+                                            <li style="margin-bottom: 10px;"><p>Responsive Designer</p></li>
+                                            
+                                        </ul>
+                                        <h4 class="py-0 my-0">Member of Physics Olympiad ,Paradox Physics</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Services-->
+       <section id="services" class="service-section">
+            <div class="container">
+                <div class="service-card">
+                    <h2 style="margin-top: -200px;margin-bottom: 30px;  font-weight: bold; margin-left: 420px; font-size: 1cm;" class="py-5">SERVICES</h2>
+                    <div class="container">
+
+                        <div class="row mb-4">
+
+                            <div class="col-md-4 d-flex justify-content-between hover-icon">
+                                <div class="icon-box" style="text-align: center; justify-content: center; box-shadow: 2px 5px 10px gainsboro; height: 300px; width: 400px;">
+                                        <div class="icon">
+                                            <i class="fa fa-laptop"></i>
+                                        </div>
+                                        <h4>WEB DESIGN</h4>
+                                        
+                                </div>    
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-between">
+                                <div class="icon-box" style="text-align: center;justify-content: center; box-shadow: 2px 5px 10px gainsboro; height: 300px; width: 400px;">
+                                        <div class="icon">
+                                            <i class="fa fa-code" aria-hidden="true"></i>
+                                        </div>
+                                        <h4>WEB DEVELOPMENT</h4>
+                                                  
+                                </div>    
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-between">
+                                <div class="icon-box" style="text-align: center; justify-content: center; box-shadow: 2px 5px 10px gainsboro; height: 300px;width: 400px;">
+                                        <div class="icon">
+                                            <i class="fa fa-code" aria-hidden="true"></i>
+                                        </div>
+                                        <h4>RESPONSIVE DESIGN</h4>
+                                                   
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+
+                            <div class="col-md-4 d-flex justify-content-between hover-icon">
+                                <div class="icon-box" style="text-align: center; justify-content: center; box-shadow: 2px 5px 10px gainsboro; height: 300px; width: 400px;">
+                                        <div class="icon">
+                                            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                                        </div>
+                                        <h4>ANDROID APPLICATION DEVELOPMENT</h4>
+                                        
+                                </div>    
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-between">
+                                <div class="icon-box" style="text-align: center;justify-content: center; box-shadow: 2px 5px 10px gainsboro; height: 300px; width: 400px;">
+                                        <div class="icon">
+                                            <i class="fa fa-code" aria-hidden="true"></i>
+                                        </div>
+                                        <h4>CYBER SECURITY</h4>
+                                                  
+                                </div>    
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-between">
+                                <div class="icon-box" style="text-align: center; justify-content: center; box-shadow: 2px 5px 10px gainsboro; height: 300px;width: 400px;">
+                                        <div class="icon">
+                                            <i class="fa fa-code" aria-hidden="true"></i>
+                                        </div>
+                                        <h4>BLOCKCHAIN DEVELOPMENT</h4>
+                                                   
+                                </div>    
+                            </div>
+                        </div>
+
+                     
+                    </div>
+                </div>
+            </div>
+       </section>
+
+
+       <!--contact form-->
+
+       <section id="contact">
+            <div class="container">
+                <div class="contact-card">
+                    <h2 style="margin-top: -150px;margin-bottom: 70px;  font-weight: bold; margin-left: 420px; font-size: 1cm;">CONTACT</h2>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-5">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h3 style="font-size: 23px; font-weight: bold; margin-bottom: 0;">Location</h3>
+                                    <p>Chittgong,Bangladesh</p>
+                                </div>
+                                
+                                <div class="email">
+                                    <i class="icofont-email"></i>
+                                    <h3 style="font-size: 23px; font-weight: bold; margin-bottom: 0;">Email:</h3>
+                                    <p>ajoydev38@gmail.com</p>
+                                </div>
+                                
+                                <div class="phone mb-4">
+                                    <i class="icofont-ui-call"></i>
+                                    <h3 style="font-size: 23px; font-weight: bold; margin-bottom: 0;">Phone:</h3>
+                                    <p style="margin-bottom:30px">+880 1533 306198</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="map">
+                                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24024.441575886867!2d91.835723586249!3d22.347800651666734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad27157abeb2db%3A0x3f75d300e5cdbdce!2sBakalia%2C%20Chattogram!5e1!3m2!1sen!2sbd!4v1606397080662!5m2!1sen!2sbd" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-center">Please fill out this form to contact me</h5>
+                                    <form action="https//formspree.io/ajoydev38@gmail.com" method="POST">
+                                        <div class="row mt-4" >
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" id="name" placeholder="Enter your name" class="form-control" name="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" id="email" placeholder="Email" class="form-control" name ="Email"> 
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row ">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="subject">Subject</label>
+                                                    <input type="email" id="subject" placeholder="" class="form-control" name="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phone">Phone</label>
+                                                    <input type="number" id="phone" placeholder="Phone Number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="message">Message</label>
+                                                    <textarea name="Message" id="message" cols="30" rows="11" class="form-control"></textarea>
+                                                </div>
+                                                <div>
+                                                    <input type="button" value="Send" class="btn btn-dark btn-block">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+
+       <!--Top-->
+       <div class="arrow-sign ml-auto" style="margin-right :15px;margin-bottom :15px">
+        <a href="#" class="back-to-top arrow" style="display:inline">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </a>
+      </div>
+        
+       <!--Copyright-->
+
+       <section class="copyright text-center py-4 text-light" >
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-0">Copyright 2020 &copy; <b>Ajoy Nath</b>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+    <!-- JS FILES -->
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!---->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <!--navbar fixed-->
+    <script src="js/navbar-fixed.js"></script>
+    
+
+</body>
+</html>
